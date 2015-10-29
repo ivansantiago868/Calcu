@@ -9,12 +9,38 @@ import javax.faces.event.ActionEvent;
  
 @ManagedBean
 public class ButtonView {
-     
-    public void buttonAction(ActionEvent actionEvent) {
-        
-        String nombreCampo =actionEvent.getComponent().getId();
-        String id = nombreCampo.substring(nombreCampo.indexOf("B"),1);
-        
+
+    private String text;
+    /*
+    private operacion{
+        String numero1;
+        String numero2;
+        String operador;
+    };
+    */
+ 
+    public String getText() {
+            return text;
     }
+    public void setText(String text) {
+            this.text = text;
+    }
+        
+    public void buttonAction(ActionEvent actionEvent) {
+        String nombreCampo =actionEvent.getComponent().getId();
+        String id = nombreCampo.substring(1,2);
+        String tabla = getText();
+        if(tabla == null)
+        {
+            tabla = id;
+        }
+        else
+        {
+            tabla = tabla+id;
+        }
+        
+        setText(tabla);
+    }
+
      
 }
