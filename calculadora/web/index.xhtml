@@ -17,25 +17,25 @@
                 <p:inputTextarea class="tempo" id="name" value="#{buttonView.text}" style="width: 200px;" />
             </f:facet>
             
-            <p:commandButton id="B7" value="7" actionListener="#{buttonView.buttonAction}" />    
-            <p:commandButton id="B8" value="8" actionListener="#{buttonView.buttonAction}" />     
-            <p:commandButton id="B9" value="9" actionListener="#{buttonView.buttonAction}" /> 
-            <p:commandButton id="BD" value="/" actionListener="#{buttonView.buttonAction}" /> 
+            <p:commandButton id="B7" value="7" actionListener="#{buttonView.buttonAction}" update="name" />    
+            <p:commandButton id="B8" value="8" actionListener="#{buttonView.buttonAction}" update="name"/>     
+            <p:commandButton id="B9" value="9" actionListener="#{buttonView.buttonAction}" update="name"/> 
+            <p:commandButton id="BD" value="/" actionListener="#{buttonView.buttonAction}" update="name"/> 
             
-            <p:commandButton id="B4" value="4" actionListener="#{buttonView.buttonAction}" />     
-            <p:commandButton id="B5" value="5" actionListener="#{buttonView.buttonAction}" />     
-            <p:commandButton id="B6" value="6" actionListener="#{buttonView.buttonAction}" /> 
-            <p:commandButton id="BM" value="*" actionListener="#{buttonView.buttonAction}" /> 
+            <p:commandButton id="B4" value="4" actionListener="#{buttonView.buttonAction}" update="name"/>     
+            <p:commandButton id="B5" value="5" actionListener="#{buttonView.buttonAction}" update="name"/>     
+            <p:commandButton id="B6" value="6" actionListener="#{buttonView.buttonAction}" update="name"/> 
+            <p:commandButton id="BM" value="*" actionListener="#{buttonView.buttonAction}" update="name"/> 
             
-            <p:commandButton id="B3" value="3" actionListener="#{buttonView.buttonAction}" />     
-            <p:commandButton id="B2" value="2" actionListener="#{buttonView.buttonAction}" />     
-            <p:commandButton id="B1" value="1" actionListener="#{buttonView.buttonAction}" /> 
-            <p:commandButton id="BR" value="-" actionListener="#{buttonView.buttonAction}" /> 
+            <p:commandButton id="B3" value="3" actionListener="#{buttonView.buttonAction}" update="name"/>     
+            <p:commandButton id="B2" value="2" actionListener="#{buttonView.buttonAction}" update="name"/>     
+            <p:commandButton id="B1" value="1" actionListener="#{buttonView.buttonAction}" update="name"/> 
+            <p:commandButton id="BR" value="-" actionListener="#{buttonView.buttonAction}" update="name"/> 
             
-            <p:commandButton id="BP" value="." actionListener="#{buttonView.buttonAction}" />     
-            <p:commandButton id="B0" value="0" actionListener="#{buttonView.buttonAction}" />     
-            <p:commandButton id="BI" value="=" actionListener="#{buttonView.buttonAction}" /> 
-            <p:commandButton id="BS" value="+" actionListener="#{buttonView.buttonAction}" /> 
+            <p:commandButton id="BP" value="." actionListener="#{buttonView.buttonAction}" update="name"/>     
+            <p:commandButton id="B0" value="0" actionListener="#{buttonView.buttonAction}" update="name"/>     
+            <p:commandButton id="BI" value="=" actionListener="#{buttonView.buttonAction}" update="name"/> 
+            <p:commandButton id="BS" value="+" actionListener="#{buttonView.buttonAction}" update="name"/> 
         </p:panelGrid>
         </h:form>
     </h:body>
