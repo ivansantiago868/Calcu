@@ -14,7 +14,7 @@
         <h:form>            
         <p:panelGrid columns="4">
             <f:facet name="header">
-                <h:outputText id="text" value="#{buttonView.text}" />
+                <p:inputTextarea class="tempo" id="name" value="#{buttonView.text}" style="width: 200px;" />
             </f:facet>
             
             <p:commandButton id="B7" value="7" actionListener="#{buttonView.buttonAction}" />    
